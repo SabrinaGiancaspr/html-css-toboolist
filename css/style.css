@@ -1,34 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     font-family: 'Noto Sans Multani', sans-serif;
 }
 
-body{
+body {
     background-color:#F6F8F9 ;
-    
 }
 
+/* header  */
+
 .logo-container{
-    padding: 15px;
+    padding: 14px 24px;
     margin: 5px;
+    font-size: 35px;
+    font-weight: bold;
     background-color: #FFFFFF;
 }
 
 .title{
     display: inline-block;
     vertical-align: top;
-    font-size: 40px;
-    font-weight: 900;
+    margin-bottom: 8px;
 }
 
-.button-container {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 50px;
-    padding-top: 40px;
-    padding-left: 100px;
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* nav  */
+
+.button {
+    padding-top: 30px;
+    padding-left: 90px;
     border-bottom: 1px solid rgb(224, 223, 223);
     height: 80px;
     background-color:#FFFFFF ;
@@ -36,9 +45,10 @@ body{
 }
 
 button{
-   width: 80px;
-   height: 30px;
-   border-radius: 10%;
+    line-height: 24px;
+    padding: 0 12px;
+    font-size: 15px;
+    border-radius: 10px;
    margin-left: 5px;  
 }
 
@@ -55,11 +65,14 @@ button{
    border: 1px solid gray;
 }
 
-.task-list-container{
-    margin-left: 200px;
-    margin-right: 200px;
+/* inizio lista  */
+
+.task-list {
+    padding-top: 20px;
     padding-left: 100px;
-    background-color: white;
+    border-bottom: 1px solid rgb(224, 223, 223);
+    background-color:#FFFFFF ;
+    border-radius: 5px;
 }
 
 .list{
@@ -71,13 +84,14 @@ button{
     line-height: 45px;
 }
 
-.block{
+/* blocchi colorati  */
+
+.task-tag{
 display: inline-block;
 color: white;
-height: 30px;
-width: 75px;
+line-height: 24px;
+padding: 0 12px;
 font-size: 13px;
-text-align: center;
 border-radius: 10px;
 }
 
@@ -104,19 +118,28 @@ background-color: #D863A0;
 background-color: #B0C926;
 }
 
+/* task status  */
 
-.check-entity{
-    padding: 3px;
+.circle{
+    width: 25px;
+    aspect-ratio: 1 / 1 ;
+    display: inline-block;
     border-radius: 50%;
-    background-color: white;
-    border: 1px solid green; 
-    color: green;
 }
 
-.cross-entety{
-    padding: 3px;
-    border-radius: 50%;
+ .check-entity{
+    border: 1px solid green;
     background-color: white;
-    border: 1px solid red; 
+    color: green;
+    text-align: center;
+    line-height: 22px;
+ }
+     
+.cross-entity{
+    border: 1px solid currentColor;
+    background-color: white;
     color: red;
+    text-align: center;
+    line-height: 22px;
+
 }
